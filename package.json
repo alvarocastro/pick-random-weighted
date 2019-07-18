@@ -1,6 +1,6 @@
 {
   "name": "pick-random-weighted",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Pick a random item from a weighted list.",
   "main": "index.js",
   "scripts": {
