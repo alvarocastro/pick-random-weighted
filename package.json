@@ -1,0 +1,29 @@
+{
+  "name": "pick-random-weighted",
+  "version": "0.0.1",
+  "description": "Pick a random item from a weighted list.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvarocastro/pick-random-weighted.git"
+  },
+  "keywords": [
+    "pick",
+    "choose",
+    "random",
+    "array",
+    "list",
+    "decision",
+    "weighted",
+    "picking"
+  ],
+  "author": "Alvaro Castro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alvarocastro/pick-random-weighted/issues"
+  },
+  "homepage": "https://github.com/alvarocastro/pick-random-weighted#readme"
+}
