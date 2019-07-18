@@ -1,4 +1,5 @@
-export default function (data) {
+'use strict';
+module.exports = (data) => {
 	// Split input into two separate arrays of values and weights.
 	const values = data.map(d => d[0]);
 	const weights = data.map(d => d[1]);
