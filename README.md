@@ -1,6 +1,10 @@
 # pick-random-weighted [![Build Status](https://travis-ci.org/alvarocastro/pick-random-weighted.svg?branch=master)](https://travis-ci.org/alvarocastro/pick-random-weighted)
 
-Pick a random item from a weighted list.
+Simple, fast and lightweight function to pick a random element from a weighted array.
+
+- [Install](#install)
+- [Usage](#usage)
+- [Randomness](#random-number-generation)
 
 ## Install
 
