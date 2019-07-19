@@ -1,4 +1,4 @@
-# pick-random-weighted
+# pick-random-weighted [![Build Status](https://travis-ci.org/alvarocastro/pick-random-weighted.svg?branch=master)](https://travis-ci.org/alvarocastro/pick-random-weighted)
 
 Pick a random item from a weighted list.
 
