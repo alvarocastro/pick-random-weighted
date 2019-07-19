@@ -38,7 +38,7 @@ Each element should be provided in the format `[value, weight]`.
 
 By default, and to keep a small footprint, the library uses `Math.random()` to generate the random number to pick the value.
 
-If you need you can define a custom function to generate random values, you can create a function that returns fixed values to use on your unit tests or implement a more specialized library like [https://www.npmjs.com/package/random-js](random-js).
+If you need you can define a custom function to generate random values, you can create a function that returns fixed values to use on your unit tests or implement a more specialized library like [random-js](https://www.npmjs.com/package/random-js).
 
 ### Using a custom random generator
 
