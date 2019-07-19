@@ -61,4 +61,3 @@ const colors = [
 const color = pick(colors);
 // Will always return 'Green'
 ```
-
