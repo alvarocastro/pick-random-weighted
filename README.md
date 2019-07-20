@@ -1,4 +1,4 @@
-# pick-random-weighted [![Build Status](https://travis-ci.org/alvarocastro/pick-random-weighted.svg?branch=master)](https://travis-ci.org/alvarocastro/pick-random-weighted)
+# pick-random-weighted [![Build Status](https://travis-ci.org/alvarocastro/pick-random-weighted.svg?branch=master)](https://travis-ci.org/alvarocastro/pick-random-weighted) [![codebeat badge](https://codebeat.co/badges/30a477ac-037a-43e2-b868-fc87002fc822)](https://codebeat.co/projects/github-com-alvarocastro-pick-random-weighted-master)
 
 Simple, fast and lightweight function to pick a random element from a weighted array.
 
