@@ -18,6 +18,7 @@ const pick = function (data) {
 };
 
 pick.random = function () {
+	/* istanbul ignore next */
 	return Math.random();
 };
 
