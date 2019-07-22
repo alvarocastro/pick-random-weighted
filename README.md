@@ -1,4 +1,5 @@
 # pick-random-weighted
+[![NPM](https://img.shields.io/npm/v/pick-random-weighted.svg)](https://www.npmjs.com/package/pick-random-weighted)
 [![Build Status](https://travis-ci.org/alvarocastro/pick-random-weighted.svg?branch=master)](https://travis-ci.org/alvarocastro/pick-random-weighted)
 [![codebeat badge](https://codebeat.co/badges/30a477ac-037a-43e2-b868-fc87002fc822)](https://codebeat.co/projects/github-com-alvarocastro-pick-random-weighted-master)
 [![Coverage Status](https://coveralls.io/repos/github/alvarocastro/pick-random-weighted/badge.svg?branch=master)](https://coveralls.io/github/alvarocastro/pick-random-weighted?branch=master)
