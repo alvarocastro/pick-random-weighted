@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/alvarocastro/pick-random-weighted.svg?branch=master)](https://travis-ci.org/alvarocastro/pick-random-weighted)
 [![codebeat badge](https://codebeat.co/badges/30a477ac-037a-43e2-b868-fc87002fc822)](https://codebeat.co/projects/github-com-alvarocastro-pick-random-weighted-master)
 [![Coverage Status](https://coveralls.io/repos/github/alvarocastro/pick-random-weighted/badge.svg?branch=master)](https://coveralls.io/github/alvarocastro/pick-random-weighted?branch=master)
+[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 
 Simple, fast and lightweight function to pick a random element from a weighted array.
 
