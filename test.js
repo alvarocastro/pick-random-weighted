@@ -37,6 +37,12 @@ test('Should work with lists of multiple items', t => {
 });
 
 test('Should validate input', t => {
-	t.throws(() => pick(), 'Expected an Array as the first argument');
-	t.throws(() => pick('bad'), 'Expected an Array as the first argument');
+	t.throws(() => pick(), {
+		instanceOf: TypeError,
+		message: 'Expected an Array as the first argument'
+	});
+	t.throws(() => pick('bad'), {
+		instanceOf: TypeError,
+		message: 'Expected an Array as the first argument'
+	});
 })
