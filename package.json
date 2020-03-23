@@ -4,7 +4,7 @@
   "description": "Pick a random item from a weighted list.",
   "main": "index.js",
   "scripts": {
-    "test": "nyc ava",
+    "test": "xo && nyc ava",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
@@ -30,6 +30,7 @@
   "devDependencies": {
     "ava": "3.5.1",
     "coveralls": "3.0.11",
-    "nyc": "15.0.0"
+    "nyc": "15.0.0",
+    "xo": "^0.28.0"
   }
 }

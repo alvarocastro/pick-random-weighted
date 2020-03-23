@@ -1,5 +1,5 @@
 const test = require('ava');
-const pick = require('./index.js');
+const pick = require('.');
 
 // Mock random number generation.
 let randomSequence = [];
@@ -9,12 +9,12 @@ pick.random = function () {
 	return n;
 };
 
-test('Should return \'undefined\' with empty lists', t => {
+test('Should return ’undefined’ with empty lists', t => {
 	t.assert(pick([]) === undefined);
 });
 
 test('Should work with lists of one item', t => {
-	randomSequence = [.1, .6, .3, .4]; // Reset random generation.
+	randomSequence = [0.1, 0.6, 0.3, 0.4]; // Reset random generation.
 	const data = [
 		['a', 1]
 	];
@@ -24,7 +24,7 @@ test('Should work with lists of one item', t => {
 });
 
 test('Should work with lists of multiple items', t => {
-	randomSequence = [.1, .6, .3, .4]; // Reset random generation.
+	randomSequence = [0.1, 0.6, 0.3, 0.4]; // Reset random generation.
 	const data = [
 		['a', 2],
 		['b', 2],
@@ -45,4 +45,4 @@ test('Should validate input', t => {
 		instanceOf: TypeError,
 		message: 'Expected an Array as the first argument'
 	});
-})
+});

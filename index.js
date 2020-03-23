@@ -10,11 +10,14 @@ const pick = function (data) {
 	const weights = data.map(d => d[1]);
 
 	let acc = 0;
-	const sum = weights.reduce((acc, el) => acc + el, 0);
-	const weightsSum = weights.map(el => (acc = el + acc));
+	const sum = weights.reduce((acc, element) => acc + element, 0);
+	const weightsSum = weights.map(element => {
+		acc = element + acc;
+		return acc;
+	});
 	const rand = pick.random() * sum;
 
-	return values[weightsSum.filter(el => el <= rand).length];
+	return values[weightsSum.filter(element => element <= rand).length];
 };
 
 pick.random = function () {
