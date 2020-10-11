@@ -32,8 +32,10 @@ test('Should work with lists of multiple items', t => {
 		['d', 3]
 	];
 
-	t.assert(pick(data) === 'a');
-	t.assert(pick(data) === 'c');
+	t.is(pick(data), 'a');
+	t.is(pick(data), 'c');
+	t.is(pick(data), 'b');
+	t.is(pick(data), 'c');
 });
 
 test('Should validate input', t => {
