@@ -1,0 +1,32 @@
+# When master is updated, run tests, create release tag in github and publish
+# package on npm.
+
+name: build
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  test-and-release:
+    name: test and release
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v1
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Run tests
+      run: npm test
+
+    - name: Create release
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      run: npx semantic-release

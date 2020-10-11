@@ -1,0 +1,32 @@
+# Run tests and update code coverage on push and pull requests.
+
+name: test
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  test:
+    name: test and coverage
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v1
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Run tests
+      run: npm test
+
+    - name: Prepare coverage report
+      run: npx nyc report --reporter=lcov
+
+    - name: Send coverage data to coveralls.io
+      uses: coverallsapp/github-action@master
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}

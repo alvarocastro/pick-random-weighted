@@ -1,15 +1,20 @@
 # pick-random-weighted
-[![NPM](https://img.shields.io/npm/v/pick-random-weighted.svg)](https://www.npmjs.com/package/pick-random-weighted)
-[![Build Status](https://travis-ci.org/alvarocastro/pick-random-weighted.svg?branch=master)](https://travis-ci.org/alvarocastro/pick-random-weighted)
-[![codebeat badge](https://codebeat.co/badges/30a477ac-037a-43e2-b868-fc87002fc822)](https://codebeat.co/projects/github-com-alvarocastro-pick-random-weighted-master)
-[![Coverage Status](https://coveralls.io/repos/github/alvarocastro/pick-random-weighted/badge.svg?branch=master)](https://coveralls.io/github/alvarocastro/pick-random-weighted?branch=master)
-[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
+
+[![NPM](https://img.shields.io/npm/v/pick-random-weighted)](https://www.npmjs.com/package/pick-random-weighted)
+[![Build status](https://img.shields.io/github/workflow/status/alvarocastro/pick-random-weighted/build)](https://github.com/alvarocastro/pick-random-weighted/actions?query=workflow%3Abuild)
+[![Maintainability status](https://img.shields.io/codeclimate/maintainability/alvarocastro/pick-random-weighted)](https://codeclimate.com/github/alvarocastro/pick-random-weighted/maintainability)
+[![Coverage status](https://img.shields.io/coveralls/github/alvarocastro/pick-random-weighted)](https://coveralls.io/github/alvarocastro/pick-random-weighted?branch=master)
+[![Bundle size](https://img.shields.io/bundlephobia/min/pick-random-weighted)](https://bundlephobia.com/result?p=pick-random-weighted)
+[![Code style: XO](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
+[![Release: Semantic](https://img.shields.io/badge/%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 Simple, fast and lightweight function to pick a random element from a weighted array.
 
 - [Install](#install)
 - [Usage](#usage)
 - [Randomness](#random-number-generation)
+- [Contributing](#contributing)
+- [Support](#support)
 
 ## Install
 
@@ -70,3 +75,11 @@ const colors = [
 const color = pick(colors);
 // Will always return 'Green'
 ```
+
+## Contributing
+
+Contributions are always welcome! Please run `npm test` beforehand to ensure everything is ok.
+
+## Support
+
+If you use this package please consider starring it :)
