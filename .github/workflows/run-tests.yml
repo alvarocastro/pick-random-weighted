@@ -25,10 +25,11 @@ jobs:
     - name: Run tests
       run: npm test
 
-    - name: Prepare coverage report
-      run: npx nyc report --reporter=lcov
 
-    - name: Send coverage data to coveralls.io
-      uses: coverallsapp/github-action@master
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
+#    - name: Prepare coverage report
+#      run: npx nyc report --reporter=lcov
+
+#    - name: Send coverage data to coveralls.io
+#      uses: coverallsapp/github-action@master
+#      with:
+#        github-token: ${{ secrets.GITHUB_TOKEN }}
