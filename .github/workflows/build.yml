@@ -25,6 +25,8 @@ jobs:
       run: npm ci
 
     - name: Run tests
+      env:
+        NODE_ENV: test
       run: npm test
 
     - name: Create release
