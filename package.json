@@ -4,8 +4,9 @@
   "description": "Pick a random item from a weighted list.",
   "main": "index.js",
   "scripts": {
-    "test": "xo && nyc ava"
+    "test": "xo && c8 ava"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alvarocastro/pick-random-weighted.git"
@@ -27,10 +28,9 @@
   },
   "homepage": "https://github.com/alvarocastro/pick-random-weighted#readme",
   "devDependencies": {
-    "ava": "3.15.0",
-    "coveralls": "3.1.0",
-    "nyc": "15.1.0",
-    "semantic-release": "^17.1.2",
-    "xo": "^0.39.1"
+    "ava": "4.0.1",
+    "c8": "^7.11.0",
+    "semantic-release": "^19.0.2",
+    "xo": "^0.48.0"
   }
 }
