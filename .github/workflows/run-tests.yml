@@ -37,7 +37,7 @@ jobs:
         NODE_ENV: test
         COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         COVERALLS_SERVICE_NAME: github
-        COVERALLS_GIT_BRANCH: ${{ GITHUB_REF##*/ }}
+        COVERALLS_GIT_BRANCH: ${GITHUB_REF##*/}
       run: npx nyc report --reporter=text-lcov | npx coveralls
 
     # - name: Send coverage data to coveralls.io
