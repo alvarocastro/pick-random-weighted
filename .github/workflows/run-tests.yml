@@ -23,7 +23,7 @@ jobs:
       run: npm ci
 
     - name: Run tests
-      run: npm test
+      run: NODE_ENV=test npm test
 
     - name: Prepare coverage report
       run: npx nyc report --reporter=text-lcov
