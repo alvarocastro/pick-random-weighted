@@ -24,6 +24,8 @@ npm install pick-random-weighted
 
 ## Usage
 
+The package contains a `pick` function that just works out-of-the box.
+
 ```js
 import pick from 'pick-random-weighted';
 
@@ -36,11 +38,26 @@ const colors = [
 const color = pick(colors);
 ```
 
+It also contains a `Picker` class that can be instantiated to create a custom picker.
+
+```js
+import { Picker } from 'pick-random-weighted';
+
+const picker = new Picker();
+const colors = [
+	['Red', 30],
+	['Green', 20],
+	['Blue', 40]
+];
+
+const color = Picker.pick(colors);
+```
+
 ### pick(values)
 
-Returns a value.
+Returns a random value from the `values` array.
 
-#### values
+##### values
 
 Type: `Array`
 
@@ -60,11 +77,11 @@ By overwriting `pick.random` you can define your custom function.
 > Remember the returned value should be a number within the [0,1) range.
 
 ```js
-const pick = require('pick-random-weighted');
+import { Picker } from 'pick-random-weighted';
 
-pick.random = function () {
+const picker = new Picker(function () {
 	return 0.3;
-};
+});
 
 const colors = [
 	['Red', 30],
@@ -72,8 +89,8 @@ const colors = [
 	['Blue', 40]
 ];
 
-const color = pick(colors);
-// Will always return 'Green'
+const color = Picker.pick(colors);
+// Will always return 'Green' since our custom random generator function always returns the same value.
 ```
 
 ## Contributing
