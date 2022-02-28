@@ -23,10 +23,19 @@ jobs:
       run: npm ci
 
     - name: Run tests
-      run: NODE_ENV=test npm test
+      run: npm test
+      with:
+        NODE_ENV=test
 
     - name: Prepare coverage report
       run: npx nyc report --reporter=lcov
+      with:
+        NODE_ENV=test
+
+    # - name: Send coverage data to coveralls.io
+    #   run: npx coveralls
+    #   with:
+    #     github-token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Send coverage data to coveralls.io
       uses: coverallsapp/github-action@master
