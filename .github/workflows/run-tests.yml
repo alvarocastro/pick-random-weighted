@@ -23,9 +23,9 @@ jobs:
       run: npm ci
 
     - name: Run tests
-      run: npm test
       env:
         NODE_ENV: test
+      run: npm test
 
     - name: Prepare coverage report
       env:
