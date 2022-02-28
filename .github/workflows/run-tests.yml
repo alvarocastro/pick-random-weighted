@@ -22,10 +22,10 @@ jobs:
     - name: Install dependencies
       run: npm ci
 
-    - name: Run tests
-      env:
-        NODE_ENV: test
-      run: npm test
+    # - name: Run tests
+    #   env:
+    #     NODE_ENV: test
+    #   run: npm test
 
     # - name: Prepare coverage report
     #   env:
@@ -38,7 +38,7 @@ jobs:
         COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         COVERALLS_SERVICE_NAME: github
         COVERALLS_GIT_BRANCH: ${GITHUB_REF##*/}
-      run: npx nyc report --reporter=text-lcov | npx coveralls
+      run: npx xo && npx nyc ava && npx nyc report --reporter=text-lcov | npx coveralls
 
     # - name: Send coverage data to coveralls.io
     #   run: npx coveralls
