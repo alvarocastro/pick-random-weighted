@@ -25,7 +25,7 @@ npm install pick-random-weighted
 ## Usage
 
 ```js
-const pick = require('pick-random-weighted');
+import pick from 'pick-random-weighted';
 
 const colors = [
 	['Red', 30],

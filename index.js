@@ -1,5 +1,3 @@
-'use strict';
-
 const pick = function (data) {
 	if (!Array.isArray(data)) {
 		throw new TypeError('Expected an Array as the first argument');
@@ -31,4 +29,4 @@ pick.random = function () {
 	return Math.random();
 };
 
-module.exports = pick;
+export default pick;
