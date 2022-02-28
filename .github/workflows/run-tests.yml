@@ -26,7 +26,7 @@ jobs:
       run: npm test
 
     - name: Prepare coverage report
-      run: npx nyc report --reporter=lcov
+      run: npx nyc report --reporter=text-lcov
 
     - name: Send coverage data to coveralls.io
       uses: coverallsapp/github-action@master
