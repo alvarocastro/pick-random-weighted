@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/alvarocastro/pick-random-weighted#readme",
   "devDependencies": {
-    "ava": "4.0.1",
+    "ava": "4.3.3",
     "c8": "^7.11.0",
     "semantic-release": "^19.0.2",
     "xo": "^0.48.0"
